@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .button-more {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <title>Multi Cell</title>
+    <header>
+        <div class="ajuste-link">
+            <a href="#" class="link-header" data-tab="home">Início</a>
+            <a href="#" class="link-header" data-tab="about">Sobre</a>
+            <a href="#" class="link-header" data-tab="contact">Contato</a>
+        </div>
+    </header>
+    <main>
+        <h1>Assistência Técnica<br>
+            Especializada</h1>
+        <div id="tab-home" class="tab-content active">
+            <p id="partialText">Bem-vindo à Multi Cell, sua solução confiável para reparos de dispositivos Android e iOS.
+
+                Quando seu smartphone ou tablet apresenta problemas, sabemos que você precisa de uma assistência técnica rápida, eficiente e confiável. Na Multi Cell, somos apaixonados por tecnologia e especializados em reparar uma ampla gama de dispositivos Android e iOS.
+                
+                Nossos técnicos altamente qualificados possuem o conhecimento e experiência necessários para diagnosticar e resolver problemas com precisão, desde telas quebradas até falhas de software.</p>
+            <p id="fullText" style="display: none;"> Utilizamos peças de reposição genuínas para garantir a qualidade do reparo e a durabilidade do seu dispositivo.
+                
+                Na Multi Cell, entendemos a importância do seu dispositivo em sua vida diária. Por isso, nos esforçamos para oferecer um serviço ágil, com reparos concluídos o mais rápido possível para que você possa voltar a usar seu dispositivo sem interrupções.
+                
+                Confie na Multi Cell para restaurar a funcionalidade do seu dispositivo Android ou iOS. Entre em contato conosco hoje mesmo para agendar seu reparo ou visite nossa loja para uma avaliação gratuita.
+                
+                Seu dispositivo está em boas mãos na Multi Cell..</p>
+        </div>
+      
+
+        <div id="tab-contact" class="tab-content">
+            <a href="https://wa.me/+5581982618938">
+            <img class="whatsapp-icon" src="whatsapp-icon.png" alt="WhatsApp imagem">
+            </a>
+        </div>
+    
+        <button class="button-more" onclick="toggleText()">Learn more</button>
+        <a class="whatsapp-icon" href="https://wa.me/+5581982618938">
+            <img class="whatsapp-icon" src="./assets/whatsapp-icon.png" alt="WhatsApp imagem">
+            </a>
+
+    </main>
+    <script>
+        function toggleText() {
+            var partialText = document.getElementById("partialText");
+            var fullText = document.getElementById("fullText");
+            if (partialText.style.display === "none") {
+                partialText.style.display = "block";
+                fullText.style.display = "none";
+                document.querySelector('.button-more').innerText = "Learn more";
+            } else {
+                partialText.style.display = "none";
+                fullText.style.display = "block";
+                document.querySelector('.button-more').innerText = "Show less";
+            }
+        }
+    </script>
+</body>
+</html>
