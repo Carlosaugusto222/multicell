@@ -88,9 +88,31 @@ p {
     color: #ffffff;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
      body {
-      width: 100%;
-      margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    height: 100%;
+    width: auto;
+    margin: 0;
     }
   }
+  .whatsapp-icon {
+    width: 25%;
+    height: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 2px;
+}
+.instagram-icon {
+    width: 20%;
+    height: auto;
+    position:fixed;
+    bottom: 20px;
+    right: 100px;
+}
+.icones {
+    display: flex;
+    flex-direction:column;
+}
