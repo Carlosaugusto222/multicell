@@ -37,6 +37,17 @@ header {
     bottom: 20px;
     right: 5px;
 }
+.instagram-icon {
+    width: 10%;
+    height: auto;
+    position:fixed;
+    bottom: 20px;
+    right: 200px;
+}
+.icones {
+    display: flex;
+    flex-direction:column;
+}
 .link-header {
     font-weight: 600;
     font-size: 30px;
